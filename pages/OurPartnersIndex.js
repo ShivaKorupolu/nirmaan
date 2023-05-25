@@ -113,7 +113,7 @@ function OurPartnersIndex() {
     <>
       <div className="bg-blue-50 w-full lg:h-80 sm:h-96 border border-b-8 border-b-blue-500 border-r-8 border-r-blue-500  sm:justify-center sm:items-center sm:text-center  lg:px-20 lg:pb-6 lg:pt-4 text-left">
       <div className=" sm:mb-1 lg:mb-4 flex justify-between items-center">
-            <h1 className="lg:text-4xl text-xl p-2  sm:text-xl uppercase poppin font-extrabold mt-4 underline underline-offset-8">
+            <h1 className="lg:text-4xl md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
             Our Corporate Partnerships
             </h1>
             <div className=" group flex justify-center items-center mt-10 ">
@@ -147,7 +147,7 @@ function OurPartnersIndex() {
             ? logos.map((show, logo_title) => logo_title > 5 ||(
                 <div
                   key={show.id}
-                  className="bg-gray-200 h-28 w-44 border rounded-lg p-2 border-t-blue-500 border-r-blue-500 border-t-8 border-r-8 flex justify-center items-center text-center "
+                  className="bg-gray-200 h-28 w-44 border rounded-lg p-2 shadow-lg flex justify-center items-center text-center "
                 >
                   {show.image ? (
                     <img

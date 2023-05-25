@@ -55,7 +55,7 @@ function Campaign() {
     <div>
 <section className=" bg-blue-50 px-2 lg:px-20">
           <div className="flex justify-between items-center">
-            <h1 className="lg:text-4xl text-2xl sm:text-xl poppin font-extrabold mt-10 underline underline-offset-4">
+            <h1 className="lg:text-4xl md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
               OUR CAMPAIGNS
             </h1>
             <div className=" group flex justify-center items-center mt-10 ">

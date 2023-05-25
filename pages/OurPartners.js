@@ -110,16 +110,16 @@ function OurPartners() {
 
   return (
     <>
-      <div className="bg-blue-50 w-full h-auto lg:h-screen md:h-screen pb-10 ">
-        <div className=" lg:px-20 sm:px-6 md:px-10 lg:pt-10 text-4xl underline underline-offset-8 font-bold poppin text-nirmaan-darker">
+      <div className="bg-white lg:px-20 lg:text-center md:text-center text-left w-full h-auto lg:h-screen md:h-screen pb-10 ">
+        <div className="  sm:px-6 md:px-10 lg:pt-10 text-4xl underline underline-offset-8 font-bold poppin text-nirmaan-darker">
         Our Corporate Partnerships
         </div>
-        <div className=" lg:px-20 p-4 md:px-10 lg:pt-10 pt-6 md:pt-10  text-center lg:text-center grid lg:grid-cols-6 md:grid-cols-4  gap-4 grid-cols-2   ">
+        <div className="  p-4 md:px-10 lg:pt-10 pt-6 md:pt-10  text-center lg:text-center grid lg:grid-cols-6 md:grid-cols-4  gap-4 grid-cols-2   ">
           {logos
             ? logos.map((show, logo_title) => (
                 <div
                   key={show.id}
-                  className="bg-gray-200 h-28 w-44 border rounded-lg p-2 border-t-blue-500 border-r-blue-500 border-t-8 border-r-8 flex justify-center items-center text-center "
+                  className="bg-blue-50  h-28  hover:scale-105 duration-75 transition hover:delay-200 w-44 border rounded-lg p-2 border-t-gray-200 border-r-gray-200 shadow-lg border-t-2 border-r-2 flex justify-center items-center text-center "
                 >
                   {show.image ? (
                     <img

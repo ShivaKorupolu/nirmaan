@@ -39,16 +39,16 @@ function Test() {
       menu: "About Us",
       submenu: [
         { title: "About Nirmaan" },
-        { title: "Our Story" },
-        { title: "Our team" },
-        { title: "Our Vision" },
+        { title: "nirmaan Story" },
+        { title: "nirmaan team" },
+        { title: "nirmaan Vision" },
       ],
     },
     {
       menu: "Nirmaan Imapct",
       submenu: [
         { title: "Nirmaan Membership" },
-        { title: " Media" },
+        { title: "nirmaan  Media" },
         { title: "Nirmaan Internal Events" },
         { title: "Terms and Conditions" },
         { title: "Menter Talk" },
@@ -73,14 +73,14 @@ function Test() {
         { title: "Gujarat" },
         { title: "Haryana" },
         { title: "Himachal Pradesh" },
-        
+        { title: "Jharkhand" },
       ],
     },
     {
-      menu: "Nirmaan Located",
+     
       submenu: [
        
-        { title: "Jharkhand" },
+      
         { title: "Karnataka" },
         { title: "Kerala" },
         { title: "Madhya Pradesh" },
@@ -89,13 +89,14 @@ function Test() {
         { title: "Meghalaya" },
         { title: "Mizoram" },
         { title: "Nagaland" },
+        { title: "Odisha" },
       ],
     },
     {
-      menu: "Nirmaan Located",
+     
       submenu: [
 
-{ title: "Odisha" },
+
 { title: "Punjab" },
 { title: "Rajasthan" },
 { title: "Sikkim" },
@@ -217,7 +218,7 @@ function Test() {
 
   return (
     <>
-      <div className="flex items-center justify-between lg:px-20 h-20 bg-white border border-b-2 shadow-lg">
+      <div className="flex items-center justify-between lg:px-20 h-20 bg-white border border-b-2 shadow-md">
         <div className="w-auto  ">
           <div className="flex flex-wrap  items-center">
             <div className="w-auto ">
@@ -395,7 +396,7 @@ function Test() {
         leaveTo="opacity-0"
       >
         <div
-          className="z-50 absolute  w-full bg-white border border-white shadow-lg  grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 lg:px-20 lg:pt-10  "
+          className="z-50 absolute capitalize  w-full lg:text-left text-center bg-white border border-white shadow-lg  grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 lg:px-20 lg:pt-10  "
           onMouseEnter={() => {
             who();
           }}
@@ -403,14 +404,14 @@ function Test() {
         >
           {Whoweare
             ? Whoweare.map((data, index) => (
-                <div key={index}>
-                  <h1 className="mb-6  font-extrabold leading-normal h-10 underline underline-offset-8 text-lg text-gray-700">
+                <div key={index} className={`capitalize  px-2  border-l-0 border-t-0  ${(index<3)?"border border-r-nirmaan":""} `}>
+                  <h1 className="mb-6 lg:ml-4 poppin text-gray-700  font-bold leading-normal h-10 underline    underline-offset-8 text-lg">
                     {data.menu}
                   </h1>
                   {data.submenu
                     ? data.submenu.map((subdata, index) => (
                         <div key={index}>
-                          <button className="text-sm font-semibold  text-gray-600 inter hover:text-nirmaan hover:underline underline-offset-8 my-2 text-ellipsis object-fill ">
+                          <button className="text-sm lg:ml-4 capitalize font-semibold  text-gray-600 inter hover:text-nirmaan hover:underline underline-offset-8 my-2 text-ellipsis object-fill ">
                             {subdata.title}
                           </button>
                         </div>
@@ -435,19 +436,19 @@ function Test() {
           onMouseEnter={() => {
             what();
           }}
-          className="w-full h-auto border border-white  shadow-lg underline underline-offset-8  grid lg:grid-cols-4 md:grid-cols-3 lg:px-20 lg:pt-10 bg-white"
+          className="w-full lg:text-left md:text-center text-center h-auto border border-white  shadow-lg underline underline-offset-8  grid lg:grid-cols-4 md:grid-cols-3 lg:px-20 lg:pt-10 bg-white"
           onMouseLeave={() => setWhatWeDo((whatwedo) => !whatwedo)}
         >
           {Whatwedo
             ? Whatwedo.map((data, index) => (
-                <div key={index}>
-                  <h1 className="mb-6 font-extrabold leading-normal h-10  text-base text-gray-700">
+                <div key={index} className={`capitalize  px-2  border-l-0 border-t-0  ${(index<3)?"border border-r-nirmaan":""} `}>
+                  <h1 className="lg:mb-6 lg:ml-4 font-bold leading-normal h-10  text-lg poppin text-gray-700">
                     {data.menu}
                   </h1>
                   {data.submenu
                     ? data.submenu.map((subdata, index) => (
                         <div key={index}>
-                          <button className="text-sm font-semibold text-gray-600 inter hover:text-nirmaan hover:underline underline-offset-8 my-2 text-ellipsis object-fill ">
+                          <button className=" lg:ml-4 text-sm font-semibold text-gray-600 inter hover:text-nirmaan hover:underline underline-offset-8 my-2 text-ellipsis object-fill ">
                             {subdata.title}
                           </button>
                         </div>
@@ -472,19 +473,19 @@ function Test() {
           onMouseEnter={() => {
             how();
           }}
-          className="w-full  bg-white border border-white shadow-lg h-auto grid lg:grid-cols-4 md:grid-cols-3 lg:px-20 lg:pt-10"
+          className="w-full text-center lg:text-left bg-white border border-white shadow-lg h-auto grid lg:grid-cols-4 md:grid-cols-3 lg:px-20 lg:pt-10"
           onMouseLeave={() => setHowToDonate((howtodonate) => !howtodonate)}
         >
           {Howtodonate
             ? Howtodonate.map((data, index) => (
-                <div key={index}>
-                  <h1 className="mb-6 font-extrabold leading-normal underline underline-offset-8 capitalize text-lg text-gray-700">
+                <div key={index} className={`capitalize  px-2  border-l-0 border-t-0  ${(index<5)?"border border-r-nirmaan":""} `}>
+                  <h1 className=" mb-6 lg:ml-4 font-bold leading-normal underline underline-offset-8 capitalize text-lg text-gray-700">
                     {data.menu}
                   </h1>
                   {data.submenu
                     ? data.submenu.map((subdata, index) => (
                         <div key={index}>
-                          <button className="text-sm font-semibold capitalize  text-gray-600 inter hover:text-nirmaan hover:underline underline-offset-8 my-2 text-ellipsis object-fill">
+                          <button className="text-sm lg:ml-4 font-semibold capitalize  text-gray-600 inter hover:text-nirmaan hover:underline underline-offset-8 my-2 text-ellipsis object-fill">
                             {subdata.title}
                           </button>
                         </div>
