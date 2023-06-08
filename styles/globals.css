@@ -2,33 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.poppin{
-    font-family: 'Poppins', sans-serif;
+.poppin {
+  font-family: "Poppins", sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
-.inter{
-    font-family: 'Inter', sans-serif;
+.inter {
+  font-family: "Inter", sans-serif;
 }
-p{
-    font-family: 'Inter', sans-serif;
+p {
+  font-family: "Inter", sans-serif;
 }
 
 .custom-map {
-    height: 400px; /* Set your desired height here */
-  }
-  .hellowoer{
-    flex: 1 1 0%; display: inline-block; position: relative; width: 100%; padding-bottom: 100%; vertical-align: top; overflow: hidden;
-  }
-  .hellowoer > svg {
-    width: 100%;
-    height:100%;
-    position:absolute;
-    display:inline-block;
-    bottom:10 !important;
-    left: 0 !important; 
-    top:-67;
-  }
-  
+  height: 400px; /* Set your desired height here */
+}
+.hellowoer {
+  flex: 1 1 0%;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+.hellowoer > svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline-block;
+  bottom: 10 !important;
+  left: 0 !important;
+  top: -67;
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: rgb(61 24 25 / 28%);
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer;
+  margin-right: -8px;
+}
+.react-multiple-carousel__arrow {
+  background-color: #164E63 !important;
+  background-image: none;
+}

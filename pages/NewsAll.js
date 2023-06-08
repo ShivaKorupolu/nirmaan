@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 
-function News() {
+function NewsAll() {
 
     const news = [
         {
@@ -36,19 +36,50 @@ function News() {
             image: "event4.jpg",
             link:"https://www.youtube.com/watch?v=4uVep99FHMY"
           },
+          {
+            id: "4",
+            title: "How startup company can help you to grow as a developer.",
+            discription:
+              "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. but still earn a full-time income",
+            image: "event4.jpg",
+            link:"https://www.youtube.com/watch?v=4uVep99FHMY"
+          },
+          {
+            id: "4",
+            title: "How startup company can help you to grow as a developer.",
+            discription:
+              "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. but still earn a full-time income",
+            image: "event4.jpg",
+            link:"https://www.youtube.com/watch?v=4uVep99FHMY"
+          },
+          {
+            id: "4",
+            title: "How startup company can help you to grow as a developer.",
+            discription:
+              "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. but still earn a full-time income",
+            image: "event4.jpg",
+            link:"https://www.youtube.com/watch?v=4uVep99FHMY"
+          },
+          {
+            id: "4",
+            title: "How startup company can help you to grow as a developer.",
+            discription:
+              "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. The best solution for anyone who wants to work a flexible schedule but still earn a full-time income. but still earn a full-time income",
+            image: "event4.jpg",
+            link:"https://www.youtube.com/watch?v=4uVep99FHMY"
+          },
     ]
 
   return (
     <div>
 
 <section className=" bg-white px-2 lg:px-20">
-          <div className="flex justify-between items-center mt-10 lg:m-0">
-            <h1 className="lg:text-3xl md:text-2xl text-nirmaan-darker text-xl font-bold inter lg:mt-7 lg:mb-4 md:mt-7 md:mb-4 underline underline-offset-8">
+          <div className="flex justify-center items-center mt-10 lg:m-0">
+            <h1 className="lg:text-3xl md:text-2xl text-center w-full text-nirmaan-darker text-xl font-bold inter lg:mt-7 lg:mb-4 md:mt-7 md:mb-4 underline underline-offset-8">
               OUR UPDATES
             </h1>
-            <div className=" group flex justify-center items-center lg:mt-7 lg:mb-4 md:mt-7 md:mb-4 ">
-            <a href="/NewsAll" > 
-               <button
+            {/* <div className=" group flex justify-center items-center lg:mt-7 lg:mb-4 md:mt-7 md:mb-4 ">
+              <button
                 className="font-bold poppin flex justify-end items-center py-2 px-2 w-40 mx-1 text-sm inter text-blue-400  transition ease-in-out"
                 type="button"
                 contenteditable="false"
@@ -69,8 +100,7 @@ function News() {
                   />
                 </svg>
               </button>
-              </a>
-            </div>
+            </div> */}
           </div>
 <div className="pt-4 grid   grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-4 justify-between items-center mb-10 gap-4">
 
@@ -132,8 +162,37 @@ function News() {
 
 
 
+
+export default News
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   )
 }
 
-export default News
+export default NewsAll

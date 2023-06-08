@@ -106,6 +106,32 @@ function OurPartners() {
       image: "",
       Link: "",
     },
+    {
+      id: 17,
+      title: "ADP Pvt Ltd",
+      image: "",
+      Link: "",
+    },
+    {
+      id: 18,
+      title: "Alimak Group",
+      image: "",
+      Link: "",
+    },
+    {
+      id: 19,
+      title: "Aqua Security",
+      image: "",
+      Link: "",
+    },
+    {
+      id: 20,
+      title: "Arcesium India",
+      image: "",
+      Link: "",
+    },
+
+
   ];
 
   return (
@@ -128,7 +154,7 @@ function OurPartners() {
                       alt=""
                     />
                   ) : (
-                    <span className="font-bold uppercase text-xl poppin text-nirmaan-darker ">
+                    <span className="font-bold uppercase w-full object-cover text-md poppin text-nirmaan-darker ">
                       {show.title}
                     </span>
                   )}

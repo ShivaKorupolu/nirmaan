@@ -193,7 +193,7 @@ function OurCenters() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
-      slidesToSlide: 3,
+      slidesToSlide: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -259,14 +259,14 @@ function OurCenters() {
           {center.map((data, list_key) => (
             <div
               key={data.id}
-              className="  w-full h-80 gap-x-4 flex justify-center items-center "
+              className="  w-full h-80 flex justify-center items-center "
             >
-              <div className="  bg-white border border-l-nirmaan border-l-8 border-t-nirmaan border-t-8  rounded-lg p-2 mx-2 ">
+              <div className="  bg-white border shadow-lg rounded-lg p-2 mx-2 ">
                 {data.svg}
-                <h1 className="poppin font-semibold mt-3 mb-1 h-12 text-ellipsis overflow-hidden text-gray-500 text-base">
+                <h1 className="poppin font-semibold mt-3 mb-1 h-12 text-ellipsis overflow-hidden text-nirmaan-darker text-base">
                   {data.name}
                 </h1>
-                <div className="text-sm text-ellipsis overflow-hidden h-20 text-gray-400 poppin font-normal ">
+                <div className="text-sm text-ellipsis overflow-hidden h-16 text-gray-400 poppin font-normal ">
                   {data.description}
                 </div>
                 <div className=" group flex justify-end items-center mr-2 my-6">

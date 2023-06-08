@@ -49,10 +49,10 @@ const Telangana = () => {
     <>
       <Header />
       <div className="w-full absolute bg-gray-800 ">
-        <img src="/event3.jpg" alt="" className=" h-96 w-full object-cover " />
+        <img src="/Statephotos/Telangana.jpg" alt="" className=" h-96 w-full object-cover " />
       </div>
       <div className="relative ">
-        <h1 className=" lg:text-8xl text-6xl text-white flex justify-center items-center h-96 poppin font-bold ">
+        <h1 className=" lg:text-8xl text-6xl text-nirmaan-darker  flex justify-center items-center h-96 poppin font-bold ">
           Telangana
         </h1>
       </div>
@@ -61,7 +61,7 @@ const Telangana = () => {
         <section className=" lg:px-20 px-2 mb-10">
           <div className="lg:flex justify-around items-center sm:w-full lg:pb-8 sm:pb-4 ">
             <div className=" lg:w-[60%]  mt-1 lg:mr-24">
-              <p className="lg:text-4xl text-2xl sm:text-xl font-bold poppin mb-7 mt-7 underline underline-offset-auto">
+              <p className="lg:text-3xl text-nirmaan-darker  text-2xl sm:text-xl font-bold poppin mb-7 mt-7 underline underline-offset-auto">
                 {" "}
                 ABOUT US
               </p>
@@ -83,7 +83,7 @@ const Telangana = () => {
             <div className=" lg:w-[40%] sm:w-full sm:h-[300px] sm:mt-10 lg:mt-3">
               <img
                 className="lg:h-[350px]  w-full sm:mt-14 lg:m-0 "
-                src="/about.jpg"
+                src="/Statephotos/Telangana.jpg"
                 alt=""
               />
             </div>
@@ -93,8 +93,8 @@ const Telangana = () => {
 
 
 
-      <div className=" pb-10 p-2 bg-gray-50">
-        <h1 className=" lg:px-20 uppercase  lg:text-4xl text-2xl mb-4 sm:text-xl poppin font-extrabold pt-10 underline underline-offset-8">
+      <div className=" pb-10 p-2 bg-nirmaan-secondary">
+        <h1 className=" lg:px-20 uppercase text-nirmaan-darker lg:text-4xl text-2xl mb-4 sm:text-xl poppin font-extrabold pt-10 underline underline-offset-8">
         Our Team's Ongoing Endeavors
         </h1>
         <div className="lg:px-20 lg:py-4 py-2 h-auto  ">
@@ -107,13 +107,13 @@ const Telangana = () => {
 
 
       <div className="lg:px-20 p-2 pb-10">
-        <h1 className="lg:text-4xl text-2xl mb-10 sm:text-xl poppin font-extrabold pt-10 underline underline-offset-4">
+        <h1 className="lg:text-3xl text-2xl mb-10 text-nirmaan-darker sm:text-xl poppin font-bold pt-10 underline underline-offset-4">
           OUR UPDATES
         </h1>
         <Carousel
           swipeable={false}
           draggable={false}
-          showDots={true}
+          showDots={false}
           responsive={responsivecompaign}
           ssr={true} // means to render carousel on server-side.
           infiniteLoop={true}
@@ -566,14 +566,14 @@ const Telangana = () => {
         </Carousel>
       </div>
 
-      <div className=" lg:px-20 p-2 pb-10 bg-gray-50">
-        <h1 className="lg:text-4xl text-2xl mb-10 sm:text-xl poppin font-extrabold pt-10 underline underline-offset-4">
+      <div className=" lg:px-20 p-2 pb-10 bg-nirmaan-secondary">
+        <h1 className="lg:text-3xl text-nirmaan-darker text-2xl mb-10 sm:text-xl poppin font-bold pt-10 underline underline-offset-4">
           OUR COMPAIGNS
         </h1>
         <Carousel
           swipeable={false}
           draggable={false}
-          showDots={true}
+          showDots={false}
           responsive={responsivecompaign}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
@@ -1043,6 +1043,8 @@ const Telangana = () => {
           </div>
         </Carousel>
       </div>
+
+
       <Footer />
     </>
   );

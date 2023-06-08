@@ -16,13 +16,17 @@ import GalleryIndex from "./GalleryIndex";
 import OurPartnerIndex from "./OurPartnersIndex";
 import Map from "./Map";
 import Video from "./Video";
+import Test from "./Test"
 
 const Index = () => {
   const [isShowing, setIsShowing] = useState(false);
   const [state, setState] = useState("");
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+
+<Test/>
+
       <div>
         <div className="px-0 ">
           <Carousel
@@ -39,7 +43,7 @@ const Index = () => {
           >
             <div>
               <img
-                className=" lg:h-screen object-fill h-96"
+                className=" lg:h-screen object-fill "
                 alt=""
                 src="/Banners/banner-1.jpg"
               />
@@ -79,7 +83,7 @@ const Index = () => {
         <section className="lg:px-20  py-10 ">
           <div className="lg:flex justify-around items-center sm:w-full lg:pb-8 sm:pb-4 lg:space-x-8 p-3 lg:p-0 md:space-x-4 ">
             <div className=" lg:w-[55%]  mt-1">
-              <h1 className="lg:text-4xl md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
+              <h1 className="lg:text-3xl text-nirmaan-darker md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
                 {" "}
                 ABOUT US
               </h1>
@@ -270,13 +274,13 @@ const Index = () => {
         {/* -------------------------------video Section starts-------------------------------------------- */}
 
         {/* -------------------------------Location Section starts-------------------------------------------- */}
-        <section className=" bg-gray-50 lg:px-20 w-full lg:h-[510px]  relative  px-2">
+        <section className=" bg-nirmaan-secondary lg:px-20 w-full lg:h-[510px]  relative  px-2">
           <div className=" lg:flex  justify-around  items-start">
             <div className="lg:w-[50%] sm:flex-col w-full sm:mb-20 py-6 lg:py-0">
-              <h1 className=" lg:text-4xl md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
+              <h1 className=" lg:text-3xl text-nirmaan-darker md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
                 WHERE NIRMAAN LOCATED
               </h1>
-              <h6 className="mt-10 lg:text-2xl text-lg inter sm:text-xl text-gray-700  font-bold font-heading tracking-px-n leading-tight">
+              <h6 className="mt-10 lg:text-xl text-lg inter sm:text-xl text-gray-700  font-bold font-heading tracking-px-n leading-tight">
                 Our Latest News and Articles
               </h6>
               <p className="text-gray-600 font-medium leading-relaxed inter">
@@ -365,7 +369,7 @@ const Index = () => {
 
         {/*-------------------------------- Testimonial starts here------------------------------------------ */}
         <div className="bg-white relative pb-10">
-          <h1 className="flex justify-center items-center lg:text-4xl md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
+          <h1 className="flex justify-center text-nirmaan-darker items-center lg:text-3xl md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
             TESTIMONIALS
           </h1>
           <Testimonial />
@@ -373,9 +377,9 @@ const Index = () => {
         {/*-------------------------------- Testimonial starts end------------------------------------------ */}
 
         {/* -------------------------------Certificate Section starts-------------------------------------------- */}
-        <div className="w-full bg-blue-50 lg:px-20 px-2 h-40 flex justify-center items-center">
+        <div className="w-full bg-white lg:px-20 px-2 boder shadow-lg border-t-2 h-40 flex justify-center items-center">
           <div>
-            <p className="lg:text-2xl sm:text-base text-gray-600 font-semibold inter">
+            <p className="lg:text-2xl text-md text-nirmaan-darker md:text-xl  font-bold poppin">
               Proud to be one of the world’s highest-rated nonprofits
             </p>
           </div>

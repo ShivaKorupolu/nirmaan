@@ -84,17 +84,15 @@ function Video() {
               ></video>
             </div>
 
-            <div className="lg:flex justify-center hover:hidden  items-center mb-4 px-4 lg:gap-28 absolute">
-              <div className="text-gray-300   lg:pl-4 text-2xl flex justify-center">
-                {edu}
-              </div>
-              <div className="  text-2xl lg:pl-6 text-gray-300 ">{skills}</div>
+            <div className=" w-full  px-10  gap-x-28 flex justify-between items-center hover:hidden absolute">
+              <div className="text-gray-300 hover:hidden text-2xl"> {edu}</div>
+              <div className="  text-2xl  text-gray-300 ">{skills}</div>
 
-              <div className="  text-2xl lg:pl-6  text-gray-300 ">{divRf}</div>
+              <div className="  text-2xl   text-gray-300 ">{divRf}</div>
 
               <div className="   text-2xl text-gray-300 ">{helt}</div>
 
-              <div className="  text-2xl lg:pl-7 text-gray-300 ">{divIn}</div>
+              <div className="  text-2xl  text-gray-300 ">{divIn}</div>
 
               <div className=" pr-2  text-2xl text-gray-300 ">{woEp}</div>
             </div>
@@ -109,12 +107,12 @@ function Video() {
               leaveTo="opacity-0"
             >
               <div className=" relative bottom-0 bg-black opacity-60">
-                <div className="flex w-screen h-screen">
+                <div className="flex w-screen px-6 h-screen">
                   <div
                     onMouseEnter={() => {
                       Educations();
                     }}
-                    className="w-full hover:border hover:border-white hover:border-t-0 px-5 flex justify-center items-center"
+                    className="w-full hover:border hover:border-white hover:border-t-0 px-2 flex justify-center items-center"
                   >
                     <Transition
                       show={education}

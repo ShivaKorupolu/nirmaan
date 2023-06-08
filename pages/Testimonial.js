@@ -58,7 +58,7 @@ const Testimonial = () => {
        
           swipeable={false}
           draggable={false}
-          showDots={true}
+          showDots={false}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
@@ -95,7 +95,7 @@ const Testimonial = () => {
                 <div className="lg:flex  w-full lg:my-10 sm:mt-0 -mx-4 ">
                   <div className="w-full md:w-full md:mb-0">
                     <img
-                      className="block w-full lg:mt-0 mt-6  lg:max-w-lg md:max-w-full  lg:mx-auto md:mx-2 lg:h-72 md:h-48 h-48 object-fill border-3 border-indigo-900 rounded-2xl shadow-md"
+                      className="block w-full lg:mt-0 mt-6  lg:max-w-lg md:max-w-full  lg:mx-auto md:mx-2 lg:h-72 md:h-48 h-48 object-cover border-3 border-indigo-900 rounded-2xl shadow-md"
                       src={Data.image}
                       alt=""
                     />
@@ -118,10 +118,10 @@ const Testimonial = () => {
                     <h1 className="relative lg:max-w-lg text-base lg:text-md lg:text-ellipsis lg:overflow-hidden md:text-left w-full font-bold text-gray-500 font-heading poppin mb-4 lg:mb-12">
                       {Data.content}
                     </h1>
-                    <h4 className="text-lg md:w-1/2 lg:text-2xl poppin font-bold text-gray-500">
+                    <h4 className="text-lg md:w-1/2 lg:text-2xl poppin font-bold text-nirmaan-darker">
                       {Data.name}
                     </h4>
-                    <span className="block text-sm md:w-1/2 lg:text-base  text-gray-400 font-bold">
+                    <span className="block text-sm md:w-1/2 lg:text-base  text-nirmaan-darker font-semibold">
                       {Data.discriptrion}
                     </span>
                     <div className="flex items-center justify-end">

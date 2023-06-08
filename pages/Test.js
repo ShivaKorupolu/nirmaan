@@ -12,7 +12,16 @@ function Test() {
   const [whowearemobile, setWhoWeAreMobile] = useState(false);
   const [nirmaaninternal, setNirmaanInternal] = useState(false);
   const [specialevents, setSpecialEvents] = useState(false);
-  const [nirmaanlocated, setNirmaanLocated] = useState(false);
+  const [nirmaanlocated,setNirmaanLocated]=useState(false);
+  const [whatwedomobile,setWhatWeDoMobile]=useState(false);
+  const [education, setEducation] = useState(false);
+  const [skilldevelopment, setSkillDevelopment] = useState(false);
+  const [socialleadership, setSocialLeaderShip] = useState(false);
+  const [health, setHealth] = useState(false);
+  const [howtohelpmobile, setHowToHelpMobile] = useState(false);
+  const [ourcampaigns, setOurCampaigns] = useState(false);
+
+
   function who() {
     setWhoWeAre(true);
     setWhatWeDo(false);
@@ -216,6 +225,55 @@ function Test() {
     { title: "Pune" },
   ];
 
+const Education=[
+  { title: "  Disruptive Digital Intervention" },
+        { title: "Coding Initiative Program" },
+        { title: "  Vidya Help Line Program" },
+        { title: "  Life Skills and Career Guidance" },
+        { title: "  School Adoption Program" },
+        { title: "  Scholarship Mentorship" },
+]
+
+const SkillDevelopment =[
+  { title: "  National Digital Literacy Mission" },
+  { title: " Sustainable Livelihoods to Farmers" },
+  { title: " Threads of Hope" },
+  { title: "  Avanti Women Skill Development" },
+  { title: " Youth Skill Development" },
+  { title: "  Yuva Disha" },
+
+]
+
+const SocialLeaderShip=[
+  { title: "  Giveback Program" },
+  { title: " Disaster Relief Rehabilitation" },
+  { title: " Probono Chapters" },
+  { title: "  Volunteering and Internship" },
+  { title: " Hyderabad Flood Relief Rehabilitation" },
+  { title: "  Nirmaan Food Bamk" },
+  { title: "  project Prayaas" },
+]
+
+
+const Health=[
+  { title: "  Blood Donation" },
+        { title: " Support for Gov Hospitals" },
+        { title: " 10 Bed ICU" },
+        { title: "  Supporting West Singhbhum" },
+        { title: " Hyderabad Needs Oxygen" },
+        { title: "  Hysea Covid Response" },
+]
+
+const OurCampaigns=[
+  { title: "donate for Indu" },
+        { title: "donate for Kumari" },
+        { title: "donate for Suresh Saini" },
+        { title: "donate for Nirmaan Food Bank" },
+        { title: "donate for  Project Prayaas" },
+        { title: "donate for Little child " },
+]
+
+
   return (
     <>
       <div className="flex items-center justify-between lg:px-20 h-20 bg-white border border-b-2 shadow-md">
@@ -240,7 +298,7 @@ function Test() {
                   onMouseLeave={() => {
                     who();
                   }}
-                  className="px-0 py-1 border-nirmaan mr-9 font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
+                  className="px-0 py-1 border-nirmaan text-nirmaan-darker mr-9 font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
                 >
                   <a href="#" className="group flex">
                     Who we are
@@ -269,7 +327,7 @@ function Test() {
                   onMouseLeave={() => {
                     what();
                   }}
-                  className="px-0 py-1 border-nirmaan mr-9 font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
+                  className="px-0 py-1 border-nirmaan mr-9 text-nirmaan-darker font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
                 >
                   <a href="#" className="group flex">
                     What we do
@@ -294,7 +352,7 @@ function Test() {
                   onMouseEnter={() => {
                     ourpartner();
                   }}
-                  className="px-0 py-1 border-nirmaan mr-9 font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
+                  className="px-0 py-1 border-nirmaan text-nirmaan-darker mr-9 font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
                 >
                   <a href="OurPartners" className="group flex">
                     Our Partners
@@ -309,7 +367,7 @@ function Test() {
                   onMouseLeave={() => {
                     how();
                   }}
-                  className="px-0 py-1 border-nirmaan mr-9 font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
+                  className="px-0 py-1 border-nirmaan text-nirmaan-darker mr-9 font-extrabold text-xs hover:text-nirmaan hover:border-b-2 inter hover:transition-all hover:duration-300"
                 >
                   <a href="#" className="group flex">
                     How To Help
@@ -338,7 +396,7 @@ function Test() {
             <div className="w-auto hidden lg:block">
               <div className="inline-block">
                 <button
-                  className="font-bold py-2 w-32 mx-1 text-sm poppin rounded-3xl border border-nirmaan transition ease-in-out duration-200 hover:text-blue-50 hover:bg-nirmaan text-nirmaan"
+                  className="font-bold py-2 w-32 mx-1 text-nirmaan-darker text-sm poppin rounded-3xl border border-nirmaan transition ease-in-out duration-200 hover:text-blue-50 hover:bg-nirmaan "
                   type="button"
                   contenteditable="false"
                 >
@@ -544,9 +602,10 @@ function Test() {
                   </div>
                 </div>
               </div>
-
+{/* --------------------list of header options in mobile view start---------------------------------------- */}
               <div className="flex flex-col justify-start pt-8 relative border-t-2 w-full h-screen">
                 <ul className="poppin">
+ {/*--------------------- whowearemobile start---------------------------------------------------------- */}
                   <div
                     onClick={() =>
                       setWhoWeAreMobile((whowearemobile) => !whowearemobile)
@@ -554,12 +613,11 @@ function Test() {
                     className="flex justify-between  mb-4 px-4 "
                   >
                     <li className="mb-2">
-                      {" "}
                       <a
                         className=" hover:text-gray-500 px-1 text-base font-semibold"
                         href="#"
                       >
-                        {" "}
+                        
                         Who we are
                       </a>
                     </li>
@@ -578,7 +636,6 @@ function Test() {
                       />
                     </svg>
                   </div>
-
                   <Transition
                     show={whowearemobile}
                     enter="transition-opacity duration-500"
@@ -628,24 +685,7 @@ function Test() {
                             </div>
                           </div>
                           <div className=" mt-2 px-2 w-full h-screen ">
-                            {/* {Whoweare
-            ? Whoweare.map((data, index) => (
-                <div key={index}>
-                  <p className=" p-2 mt-2 text-base font-semibold">{data.menu}</p>
-                  {data.submenu
-                    ? data.submenu.map((subdata, index) => index >5 || (
-                        <div key={index}>
-                           <button className="text-sm font-medium  text-gray-500 poppin hover:text-nirmaan hover:underline underline-offset-8 my-2 text-ellipsis object-fill "> 
-                           {subdata.title}
-                           </button> 
-                          </div>
-                      ))
-                    : ""}
-
-                </div>
-              ))
-            : ""}
-             */}
+                          
 
                             <div className=" border-t-2 border-t-blue-500 w-full h-screen">
                               <button
@@ -660,7 +700,7 @@ function Test() {
                               </button>
                               <div className=" w-full ">
                                 <div
-                                  className="mb-4 mt-4 hover:text-gray-400 px-1 text-base font-semibold"
+                                  className="mb-4 mt-4 hover:text-gray-400 px-1 text-md font-semibold "
                                   onClick={() =>
                                     setAboutUs((aboutus) => !aboutus)
                                   }
@@ -676,7 +716,7 @@ function Test() {
                                   leaveFrom="opacity-100"
                                   leaveTo="opacity-0"
                                 >
-                                  <div className="w-56 border shadow-lg mb-10 h-auto ml-16 p-3">
+                                  <div className="w-52 border text-xs shadow-lg mb-10 h-auto ml-16 p-3">
                                     {aboutusmenu
                                       ? aboutusmenu.map(
                                           (list, list_aboutus) => (
@@ -748,7 +788,7 @@ function Test() {
                                   leaveFrom="opacity-100"
                                   leaveTo="opacity-0"
                                 >
-                                  <div className="w-56 border shadow-lg mb-10 h-auto ml-16 p-3 overflow-scroll ">
+                                  <div className="w-56 border shadow-lg mb-10 h-auto ml-16 p-3">
                                     {Specialevents
                                       ? Specialevents.map(
                                           (events, list_events) => (
@@ -806,10 +846,14 @@ function Test() {
                       </nav>
                     </div>
                   </Transition>
+{/*--------------------- whowearemobile end---------------------------------------------------------- */}
 
+
+
+{/*----------------- what we do mobile start---------------- */}
                   <div
                     className="flex justify-between  mb-4 px-4"
-                    onClick={() => setWhat1((what1) => !what1)}
+                    onClick={() => setWhatWeDoMobile((whatwedomobile) => !whatwedomobile)}
                   >
                     <li className="mb-2">
                       {" "}
@@ -836,15 +880,227 @@ function Test() {
                     </svg>
                   </div>
 
+                  <Transition
+                    show={whatwedomobile}
+                    enter="transition-opacity duration-500"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-500"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="z-10 lg:hidden block navbar-menu fixed top-0 left-0 bottom-0 w-full h-screen sm:max-w-xs">
+                      <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+                      <nav className="relative  z-10 px-2 pt-4 bg-white h-auto border overflow-y-auto">
+                        <div className="flex flex-wrap justify-between h-full">
+                          <div className="w-full px-4 ">
+                            <div className="flex items-center justify-between -m-2">
+                              <div className="w-auto p-2">
+                                <a className="inline-block" href="#">
+                                  <img
+                                    src="/nirmaan_logo.png"
+                                    className="w-50 h-12"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <div className="w-auto p-2">
+                                <a className="navbar-burger" href="#">
+                                  <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    onClick={() =>
+                                      setIsShowing((isShowing) => !isShowing)
+                                    }
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6 18L18 6M6 6L18 18"
+                                      stroke="#111827"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div className=" mt-2 px-2 w-full h-screen ">
+                            <div className=" border-t-2 border-t-blue-500 w-full h-screen">
+                              <button
+                                className="mt-4 hover:text-gray-400 px-1 text-sm w-28 rounded-md bg-nirmaan h-8 p-2 text-center text-white"
+                                onClick={() =>
+                                  setWhatWeDoMobile(
+                                    (setWhatWeDoMobile) => !whatwedomobile
+                                  )
+                                }
+                              >
+                                Back
+                              </button>
+                              <div className=" w-full ">
+                                <div
+                                  className="mb-4 mt-4 hover:text-gray-400 px-1 text-md font-semibold "
+                                  onClick={() =>
+                                    setEducation((education) => !education)
+                                  }
+                                >
+                                  Education
+                                </div>
+                                <Transition
+                                  show={education}
+                                  enter="transition-opacity duration-500"
+                                  enterFrom="opacity-0"
+                                  enterTo="opacity-100"
+                                  leave="transition-opacity duration-500"
+                                  leaveFrom="opacity-100"
+                                  leaveTo="opacity-0"
+                                >
+                                  <div className="w-52 border text-xs shadow-lg mb-10 h-auto ml-16 p-3">
+                                    {Education
+                                      ? Education.map(
+                                          (education_list, education_submenu) => (
+                                            <div
+                                              key={education_list.id}
+                                              className="p-2 hover:text-nirmaan"
+                                            >
+                                              {education_list.title}
+                                            </div>
+                                          )
+                                        )
+                                      : ""}
+                                  </div>
+                                </Transition>
+
+                                <div
+                                  className="mb-4 hover:text-gray-400 px-1 text-base font-semibold"
+                                  onClick={() =>
+                                    setSkillDevelopment(
+                                      (skilldevelopment) => !skilldevelopment                                    )
+                                  }
+                                >
+                                  Skill Development and Entrepreneurship
+                                </div>
+
+                                <Transition
+                                  show={skilldevelopment}
+                                  enter="transition-opacity duration-500"
+                                  enterFrom="opacity-0"
+                                  enterTo="opacity-100"
+                                  leave="transition-opacity duration-500"
+                                  leaveFrom="opacity-100"
+                                  leaveTo="opacity-0"
+                                >
+                                  <div className="w-56 border text-xs shadow-lg mb-10 ml-16 h-auto  p-3">
+                                    {SkillDevelopment
+                                      ? SkillDevelopment.map(
+                                          (SkillDevelopment_list, SkillDevelopment_submenu) => (
+                                            <div
+                                              key={SkillDevelopment_list.id}
+                                              className="p-2 hover:text-nirmaan"
+                                            >
+                                              {SkillDevelopment_list.title}
+                                            </div>
+                                          )
+                                        )
+                                      : ""}
+                                  </div>
+                                </Transition>
+
+                                <div
+                                  className="mb-4 hover:text-gray-400 px-1 text-base font-semibold"
+                                  onClick={() =>
+                                    setSocialLeaderShip(
+                                      (socialleadership) => !socialleadership
+                                    )
+                                  }
+                                >
+                                  Social Leadership
+                                </div>
+
+                                <Transition
+                                  show={socialleadership}
+                                  enter="transition-opacity duration-500"
+                                  enterFrom="opacity-0"
+                                  enterTo="opacity-100"
+                                  leave="transition-opacity duration-500"
+                                  leaveFrom="opacity-100"
+                                  leaveTo="opacity-0"
+                                >
+                                  <div className="w-56 border text-xs shadow-lg mb-10 h-auto ml-16 p-3 ">
+                                    {SocialLeaderShip
+                                      ? SocialLeaderShip.map(
+                                          (SocialLeaderShip_list, SocialLeaderShip_submenu) => (
+                                            <div
+                                              key={SocialLeaderShip_list.id}
+                                              className="p-2 hover:text-nirmaa"
+                                            >
+                                              {SocialLeaderShip_list.title}
+                                            </div>
+                                          )
+                                        )
+                                      : ""}
+                                  </div>
+                                </Transition>
+
+                                <div
+                                  className="mb-4 hover:text-gray-400 px-1 text-base font-semibold"
+                                  onClick={() =>
+                                    setHealth(
+                                      (health) => !health
+                                    )
+                                  }
+                                >
+                                  Health
+                                </div>
+
+                                <Transition
+                                  show={health}
+                                  enter="transition-opacity duration-500"
+                                  enterFrom="opacity-0"
+                                  enterTo="opacity-100"
+                                  leave="transition-opacity duration-500"
+                                  leaveFrom="opacity-100"
+                                  leaveTo="opacity-0"
+                                >
+                                  <div className="w-56 border text-xs shadow-lg mb-4 h-auto ml-10 p-3">
+                                    {Health
+                                      ? Health.map(
+                                          (Health_list, Health_submenu) => (
+                                            <div
+                                              key={Health_list.id}
+                                              className="p-2 hover:text-nirmaan"
+                                            >
+                                              {Health_list.title}
+                                            </div>
+                                          )
+                                        )
+                                      : ""}
+                                  </div>
+                                </Transition>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </Transition>
+{/*----------------- what we do mobile end---------------- */}
+
+
+
+{/* ----------------------Our partners mobile start----------------------------- */}
                   <div
                     className="flex justify-between  mb-4 px-4"
-                    onClick={() => setWhere((where) => !where)}
                   >
+                  
                     <li className="mb-2">
                       {" "}
                       <a
                         className=" hover:text-gray-500 px-1 text-base font-semibold"
-                        href="#"
+                        href="/OurPatners"
                       >
                         Our Partners
                       </a>
@@ -864,12 +1120,18 @@ function Test() {
                       />
                     </svg>
                   </div>
+{/* ----------------------Our partners mobile end----------------------------- */}
+
+
+
+
+{/* ----------------------How to help mobile end----------------------------- */}
 
 
 
                   <div
                     className="flex justify-between  mb-4 px-4"
-                    onClick={() => setHow((how) => !how)}
+                    onClick={() => setHowToHelpMobile((howtohelpmobile) => !howtohelpmobile)}
                   >
                     <li className="mb-2">
                       {" "}
@@ -895,6 +1157,113 @@ function Test() {
                       />
                     </svg>
                   </div>
+
+                  <Transition
+                    show={howtohelpmobile}
+                    enter="transition-opacity duration-500"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-500"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="z-10 lg:hidden block navbar-menu fixed top-0 left-0 bottom-0 w-full h-screen sm:max-w-xs">
+                      <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+                      <nav className="relative  z-10 px-2 pt-4 bg-white h-auto border overflow-y-auto">
+                        <div className="flex flex-wrap justify-between h-full">
+                          <div className="w-full px-4 ">
+                            <div className="flex items-center justify-between -m-2">
+                              <div className="w-auto p-2">
+                                <a className="inline-block" href="#">
+                                  <img
+                                    src="/nirmaan_logo.png"
+                                    className="w-50 h-12"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <div className="w-auto p-2">
+                                <a className="navbar-burger" href="#">
+                                  <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    onClick={() =>
+                                      setIsShowing((isShowing) => !isShowing)
+                                    }
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6 18L18 6M6 6L18 18"
+                                      stroke="#111827"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div className=" mt-2 px-2 w-full h-screen ">
+                            <div className=" border-t-2 border-t-blue-500 w-full h-screen">
+                              <button
+                                className="mt-4 hover:text-gray-400 px-1 text-sm w-28 rounded-md bg-nirmaan h-8 p-2 text-center text-white"
+                                onClick={() =>
+                                  setHowToHelpMobile(
+                                    (howtohelpmobile) => !howtohelpmobile
+                                  )
+                                }
+                              >
+                                Back
+                              </button>
+                              <div className=" w-full ">
+                                <div
+                                  className="mb-4 mt-4 hover:text-gray-400 px-1 text-md font-semibold "
+                                  onClick={() =>
+                                    setOurCampaigns((ourcampaigns) => !ourcampaigns)
+                                  }
+                                >
+                                  Our Campaigns
+                                </div>
+                                <Transition
+                                  show={ourcampaigns}
+                                  enter="transition-opacity duration-500"
+                                  enterFrom="opacity-0"
+                                  enterTo="opacity-100"
+                                  leave="transition-opacity duration-500"
+                                  leaveFrom="opacity-100"
+                                  leaveTo="opacity-0"
+                                >
+                                  <div className="w-52 border text-xs shadow-lg mb-10 h-auto ml-16 p-3">
+                                    {OurCampaigns
+                                      ? OurCampaigns.map(
+                                          (OurCampaigns_list, OurCampaigns_submenu) => (
+                                            <div
+                                              key={OurCampaigns_list.id}
+                                              className="p-2 hover:text-nirmaan"
+                                            >
+                                              {OurCampaigns_list.title}
+                                            </div>
+                                          )
+                                        )
+                                      : ""}
+                                  </div>
+                                </Transition>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </Transition>
+
+
+{/* ----------------------How to help mobile end----------------------------- */}
+
+
 
                   {/* -------------------volunteer buttons for mobile start---------------------------------------- */}
                   <div className="w-full  px-4  flex justify-between ">

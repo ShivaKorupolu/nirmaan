@@ -17,10 +17,12 @@ module.exports = {
           DEFAULT: "#38BDF8",
           dark: "#0891B2",
           darker: "#164E63",
+          secondary:"#EEEEEE",
         },
 
     },
   },
+
   container: {
     padding: {
       DEFAULT: '1rem',
@@ -32,7 +34,7 @@ module.exports = {
   },
 
 
-
+ 
 
 
 

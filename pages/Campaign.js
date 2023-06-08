@@ -53,12 +53,13 @@ function Campaign() {
   return (
 
     <div>
-<section className=" bg-blue-50 px-2 lg:px-20">
-          <div className="flex justify-between items-center">
-            <h1 className="lg:text-4xl md:text-2xl text-xl font-bold inter mb-7 lg:mt-7 underline underline-offset-8">
+<section className=" bg-nirmaan-secondary px-2 lg:px-20">
+          <div className="flex justify-between items-center mt-10 lg:mt-0">
+            <h1 className="lg:text-3xl text-nirmaan-darker md:text-2xl text-xl font-bold inter lg:mt-7 lg:mb-4 md:mt-7 md:mb-4 underline underline-offset-8">
               OUR CAMPAIGNS
             </h1>
-            <div className=" group flex justify-center items-center mt-10 ">
+            <div className=" group flex justify-center items-center lg:mt-7 lg:mb-4 md:mt-7 md:mb-4">
+            <a href="/CampaignsAll">
               <button
                 className="font-bold poppin flex justify-end items-center py-2 px-2 w-40 mx-1 text-sm inter text-blue-400  transition ease-in-out"
                 type="button"
@@ -80,6 +81,7 @@ function Campaign() {
                   />
                 </svg>
               </button>
+              </a>
             </div>
           </div>
 <div className="pt-4 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-4 justify-between items-center pb-10 gap-4">
@@ -111,7 +113,7 @@ function Campaign() {
       </div>
 
       <a className="mb-2 inline-block px-4" href="#">
-        <h3 className="text-base font-bold font-heading leading-normal hover:text-nirmaan poppin text-gray-700">
+        <h3 className="text-base text-nirmaan-darker font-bold font-heading leading-normal hover:text-nirmaan poppin ">
           {Data.title}
         </h3>
       </a>
@@ -124,7 +126,7 @@ function Campaign() {
         className=" text-nirmaan group leading-normal mr-6 flex justify-center items-center"
         href={Data.link} 
       >
-        <span className=" font-bold text-xs poppin">See More</span>
+        <span className=" font-bold text-xs  poppin">See More</span>
         <svg
           className=" transition group-hover:translate-x-2 hover:duration-500 "
           width="20"
